@@ -423,10 +423,10 @@ int main()
             cout<<"=======\n";
             printBoard();
             cout<<"=======\n";
-            cout<<"Count:"<<ct<<endl;
+            cout<<"Total Nodes Visited: "<<ct<<endl;
             auto stop = high_resolution_clock::now();
             auto duration = duration_cast<microseconds>(stop - start);
-            cout<<"Time:"<<duration.count()<<" microseconds"<<endl;
+            cout<<"Total Time Taken: "<<duration.count()<<" microseconds"<<endl;
             break;
         }
         else if(ch1==1)
@@ -482,13 +482,13 @@ int main()
                 playerTurn = !playerTurn;
             }
 
-            cout<<"=======\n";
+           cout<<"=======\n";
             printBoard();
             cout<<"=======\n";
-            cout<<"Count:"<<ct<<endl;
+            cout<<"Total Nodes Visited: "<<ct<<endl;
             auto stop = high_resolution_clock::now();
             auto duration = duration_cast<microseconds>(stop - start);
-            cout<<"Time:"<<duration.count()<<" microseconds"<<endl;
+            cout<<"Total Time Taken: "<<duration.count()<<" microseconds"<<endl;
             break;
         }
         else
