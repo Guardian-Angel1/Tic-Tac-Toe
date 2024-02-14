@@ -12,7 +12,7 @@ This Tic-Tac-Toe implementation in C++ features two modes of gameplay against an
 ## Installation
 1. **Clone the repository or download the source code:**
 
-git clone [repository-link]
+git clone https://github.com/Guardian-Angel1/Tic-Tac-Toe-.git
 
 markdown
 
