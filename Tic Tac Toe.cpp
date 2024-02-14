@@ -342,7 +342,7 @@ bool checkTie()
 //Driver Code
 int main()
 {
-    auto start = high_resolution_clock::now();
+    int tym=0;
     int ch1=0;
     while(ch1!=1 ||ch1!=2 || ch1!=3)
     {
@@ -406,7 +406,11 @@ int main()
                     } 
                 else 
                 {
+                    auto start = high_resolution_clock::now();
                     abcomputerMove();
+                    auto stop = high_resolution_clock::now();
+                    auto duration = duration_cast<microseconds>(stop - start);
+                    tym+=duration.count();
                     if (checkWin(computer)) 
                     {
                         cout << "\nResult: Computer wins!\n" << endl;
@@ -424,9 +428,7 @@ int main()
             printBoard();
             cout<<"=======\n";
             cout<<"Total Nodes Visited: "<<ct<<endl;
-            auto stop = high_resolution_clock::now();
-            auto duration = duration_cast<microseconds>(stop - start);
-            cout<<"Total Time Taken: "<<duration.count()<<" microseconds"<<endl;
+            cout<<"Total Time Taken: "<<tym<<" microseconds"<<endl;
             break;
         }
         else if(ch1==1)
@@ -467,7 +469,11 @@ int main()
                     } 
                 else 
                 {
+                    auto start = high_resolution_clock::now();
                     computerMove();
+                    auto stop = high_resolution_clock::now();
+                    auto duration = duration_cast<microseconds>(stop - start);
+                    tym+=duration.count();
                     if (checkWin(computer)) 
                     {
                         cout << "\nResult: Computer wins!\n" << endl;
@@ -486,9 +492,7 @@ int main()
             printBoard();
             cout<<"=======\n";
             cout<<"Total Nodes Visited: "<<ct<<endl;
-            auto stop = high_resolution_clock::now();
-            auto duration = duration_cast<microseconds>(stop - start);
-            cout<<"Total Time Taken: "<<duration.count()<<" microseconds"<<endl;
+            cout<<"Total Time Taken: "<<tym<<" microseconds"<<endl;
             break;
         }
         else
