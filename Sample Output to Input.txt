@@ -1,0 +1,578 @@
+Example 1:
+
+Playing as O
+Taking Maximum Depth as 3
+Playing First
+
+Method 1: Minimax without Alpha - Beta Pruning
+
+====================================================
+Welcome to Prakhar's Implementation of Tic Tac Toe
+====================================================
+                      MENU 1                          
+     Press 1 to use MINIMAX Algorithm
+     Press 2 to use MINIMAX with ALPHA - BETA PRUNING
+     Press 3 to Quit
+     Enter your choice:1
+====================================================
+
+
+Choose your player (X/O): O
+
+Enter the maximum depth for the Minimax algorithm: 3
+
+Do you want to play first? (y/n): y
+
+=======
+ | | 
+------
+ | | 
+------
+ | | 
+------
+=======
+Enter Row for your move:0
+
+Enter Column for your move:0
+
+=======
+O| | 
+------
+ | | 
+------
+ | | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X| 
+------
+ | | 
+------
+ | | 
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:2
+
+=======
+O|X| 
+------
+ | | 
+------
+ | |O
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X| 
+------
+ |X| 
+------
+ | |O
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:1
+
+=======
+O|X| 
+------
+ |X| 
+------
+ |O|O
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X| 
+------
+ |X| 
+------
+X|O|O
+------
+=======
+Enter Row for your move:0
+
+Enter Column for your move:2
+
+=======
+O|X|O
+------
+ |X| 
+------
+X|O|O
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X|O
+------
+ |X|X
+------
+X|O|O
+------
+=======
+Enter Row for your move:1
+
+Enter Column for your move:0
+
+
+Result: It's a tie!
+
+=======
+O|X|O
+------
+O|X|X
+------
+X|O|O
+------
+=======
+Total Number of Nodes Visited: 2542
+Total Time Taken :837 microseconds
+
+
+
+Method 2: Minimax with Alpha - Beta Pruning
+
+
+====================================================
+Welcome to Prakhar's Implementation of Tic Tac Toe
+====================================================
+                      MENU 1                          
+     Press 1 to use MINIMAX Algorithm
+     Press 2 to use MINIMAX with ALPHA - BETA PRUNING
+     Press 3 to Quit
+     Enter your choice:1
+====================================================
+
+
+Choose your player (X/O): O
+
+Enter the maximum depth for the Minimax algorithm: 3
+
+Do you want to play first? (y/n): y
+
+=======
+ | | 
+------
+ | | 
+------
+ | | 
+------
+=======
+Enter Row for your move:0
+
+Enter Column for your move:0
+
+=======
+O| | 
+------
+ | | 
+------
+ | | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X| 
+------
+ | | 
+------
+ | | 
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:2
+
+=======
+O|X| 
+------
+ | | 
+------
+ | |O
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X| 
+------
+ |X| 
+------
+ | |O
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:1
+
+=======
+O|X| 
+------
+ |X| 
+------
+ |O|O
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X| 
+------
+ |X| 
+------
+X|O|O
+------
+=======
+Enter Row for your move:0
+
+Enter Column for your move:2
+
+=======
+O|X|O
+------
+ |X| 
+------
+X|O|O
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X|O
+------
+ |X|X
+------
+X|O|O
+------
+=======
+Enter Row for your move:1
+
+Enter Column for your move:0
+
+
+Result: It's a tie!
+
+=======
+O|X|O
+------
+O|X|X
+------
+X|O|O
+------
+=======
+Total Number of Nodes Visited: 1550
+Total Time Taken: 436 microseconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example 2:
+
+Playing as X
+Taking maximum Depth as 8
+Playing 1st
+
+Method 1: Using Minimax Algorithm without Alpha Beta Pruning
+
+====================================================
+Welcome to Prakhar's Implementation of Tic Tac Toe
+====================================================
+                      MENU 1                          
+     Press 1 to use MINIMAX Algorithm
+     Press 2 to use MINIMAX with ALPHA - BETA PRUNING
+     Press 3 to Quit
+     Enter your choice:1
+====================================================
+
+
+Choose your player (X/O): X
+
+Enter the maximum depth for the Minimax algorithm: 8
+
+Do you want to play first? (y/n): y
+
+=======
+ | | 
+------
+ | | 
+------
+ | | 
+------
+=======
+Enter Row for your move:1
+
+Enter Column for your move:1
+
+=======
+ | | 
+------
+ |X| 
+------
+ | | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O| | 
+------
+ |X| 
+------
+ | | 
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:0
+
+=======
+O| | 
+------
+ |X| 
+------
+X| | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O| |O
+------
+ |X| 
+------
+X| | 
+------
+=======
+Enter Row for your move:0
+
+Enter Column for your move:1
+
+=======
+O|X|O
+------
+ |X| 
+------
+X| | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X|O
+------
+ |X| 
+------
+X|O| 
+------
+=======
+Enter Row for your move:1
+
+Enter Column for your move:0
+
+=======
+O|X|O
+------
+X|X| 
+------
+X|O| 
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X|O
+------
+X|X|O
+------
+X|O| 
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:2
+
+
+Result: It's a tie!
+
+=======
+O|X|O
+------
+X|X|O
+------
+X|O|X
+------
+=======
+Total Nodes Visited: 56490
+Total Time Taken: 8092 microseconds
+
+
+
+Method 2: Using Minimax Algorithm with Alpha Beta Pruning
+
+====================================================
+Welcome to Prakhar's Implementation of Tic Tac Toe
+====================================================
+                      MENU 1                          
+     Press 1 to use MINIMAX Algorithm
+     Press 2 to use MINIMAX with ALPHA - BETA PRUNING
+     Press 3 to Quit
+     Enter your choice:2
+====================================================
+
+
+Choose your player (X/O): X
+
+Enter the maximum depth for the Minimax algorithm using Alpha-Beta Pruning: 8
+
+Do you want to play first? (y/n): y
+
+=======
+ | | 
+------
+ | | 
+------
+ | | 
+------
+=======
+Enter Row for your move:1
+
+Enter Column for your move:1
+
+=======
+ | | 
+------
+ |X| 
+------
+ | | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O| | 
+------
+ |X| 
+------
+ | | 
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:0
+
+=======
+O| | 
+------
+ |X| 
+------
+X| | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O| |O
+------
+ |X| 
+------
+X| | 
+------
+=======
+Enter Row for your move:0
+
+Enter Column for your move:1
+
+=======
+O|X|O
+------
+ |X| 
+------
+X| | 
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X|O
+------
+ |X| 
+------
+X|O| 
+------
+=======
+Enter Row for your move:1
+
+Enter Column for your move:0
+
+=======
+O|X|O
+------
+X|X| 
+------
+X|O| 
+------
+=======
+
+Computer has made its move.
+
+=======
+O|X|O
+------
+X|X|O
+------
+X|O| 
+------
+=======
+Enter Row for your move:2
+
+Enter Column for your move:2
+
+
+Result: It's a tie!
+
+=======
+O|X|O
+------
+X|X|O
+------
+X|O|X
+------
+=======
+Total Nodes Visited: 16326
+Total Time Taken: 6502 microseconds
